@@ -33,6 +33,7 @@ function App() {
         <input type='number' value={vize2} onChange={(e) => setVize2(Number(e.target.value))} />
       </div>
 
+<br/>
 
       <div>
         <button onClick={ortalamaBul}>ortalama bul</button>
