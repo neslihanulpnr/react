@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url(css/heart.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.textİnput{
+  height: 28px;
+  width: 400px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid pink;
+}
+
+.todoButton{
+  margin-left: 250px;
+  background-color: pink;
+  font-size: 15px;
+  
+}
+
+.firstTodo{
+  margin-bottom: 520px;
+  background-color: pink;
+  width: 300px;
+  
+}
