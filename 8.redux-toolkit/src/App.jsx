@@ -1,16 +1,23 @@
 import { useState } from 'react'
 import './App.css'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { decrement, increment } from './redux/counterSlice';
 
 function App() {
 
-  const state = useSelector((store) => store.counter);
-  console.log(state)
+  const dispatch = useDispatch();
+
+  const { value } = useSelector((store) => store.counter);
+  console.log(value)
 
   return (
-    <>
-    nesli
-    </>
+    <div>
+      <div>{value}</div>
+      <div>
+        <button onClick={() => dispatch(increment())}>Arttır</button>
+        <button onClick={() => dispatch(decrement())}>Azalt</button>
+      </div>
+    </div>
   )
 }
 
