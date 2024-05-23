@@ -2,6 +2,9 @@ import React, { Children, useState } from 'react'
 import "../css/currency.css";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
+let BASE_URL = "https://api.freecurrencyapi.com/v1/latest"
+let API_KEY = "fca_live_XURFCn0c1S9MvrDj8UceJgHjYAJfBsFPyFEFeBXE"
+
 function Currency() {
 
    const [amount, setAmount] = useState(0);
