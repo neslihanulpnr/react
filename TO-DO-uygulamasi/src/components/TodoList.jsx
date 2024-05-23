@@ -3,7 +3,7 @@ import Todo from './Todo'
 
 function TodoList() {
   return (
-    <div>
+    <div style={{width: "100%", marginTop: "30px"}}>
       <Todo/>   
     </div>
   )

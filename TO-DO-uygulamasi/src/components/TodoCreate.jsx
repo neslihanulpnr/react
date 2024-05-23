@@ -3,15 +3,9 @@ import '../App.css'
 
 function TodoCreate() {
     return (
-        <div>
-            <div>
-                <input type='text' className='textİnput' placeholder='Todo giriniz'/>
-            </div>
-
-            <div>
-                <button className='todoButton'>Todo oluştur</button>
-            </div>
-
+        <div className='todo-create'>
+            <input type='text' className='todo-input' placeholder='Todo giriniz' />
+            <button className='todo-create-button'>Todo oluştur</button>
         </div>
     )
 }

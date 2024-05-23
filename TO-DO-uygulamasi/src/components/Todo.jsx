@@ -1,14 +1,18 @@
 import React from 'react'
 import '../App.css'
-import { IoIosRemoveCircleOutline } from "react-icons/io";
+import { IoIosRemoveCircle } from "react-icons/io";
 import { FaEdit } from "react-icons/fa";
 
 function Todo() {
   return (
-    <div>
-     <p className='firstTodo'> ben ilk todoyum</p>
-     <IoIosRemoveCircleOutline />
-     <FaEdit />
+    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', border: "1px solid lightgrey", padding: "10px"}}>
+      <div style={{ color: 'black' }}>
+        ben ilk todoyum
+      </div>
+      <div>
+        <IoIosRemoveCircle className='todo-icons' />
+        <FaEdit className='todo-icons' />
+      </div>
     </div>
   )
 }
