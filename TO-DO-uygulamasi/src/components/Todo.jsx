@@ -3,10 +3,13 @@ import '../App.css'
 import { IoIosRemoveCircle } from "react-icons/io";
 import { FaEdit } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
+import { useState } from 'react';
 
 function Todo({ todo, onRemoveTodo }) {
 
   const {id, content} = todo;
+
+  const [editable, setEditable] = useState(false)
 
   const removeTodo = () => {
     onRemoveTodo(id);
@@ -21,8 +24,9 @@ function Todo({ todo, onRemoveTodo }) {
 
       <div>
         <IoIosRemoveCircle className='todo-icons' onClick={removeTodo}/>
-        <FaEdit className='todo-icons' />
-        <FaCheck className='todo-icons' />
+        {
+            editable ? <FaCheck className='todo-icons' /> : <FaEdit className='todo-icons' onClick={() => setEditable(true)}/>
+        }
       </div>
     </div>
   )
