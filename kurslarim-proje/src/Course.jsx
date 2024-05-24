@@ -1,5 +1,3 @@
-
-
 function Course({course}) {
     const {id, title, description, price, image} = course;
   return (
