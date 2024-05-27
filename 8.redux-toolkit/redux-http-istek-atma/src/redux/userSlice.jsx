@@ -6,14 +6,14 @@ const initialState = {
     loading: false
 }
 
-export const getAllUsers = createAsyncThunk("users", async () =>{
-  const response = await axios.get("https://jsonplaceholder.typicode.com/users");
-  console.log(response.data)
-  return response.data;
+export const getAllUsers = createAsyncThunk("users", async () => {
+    const response = await axios.get("https://jsonplaceholder.typicode.com/users");
+    console.log(response.data)
+    return response.data;
 })
 
 export const userSlice = createSlice({
-    name : "user",
+    name: "user",
     initialState,
     reducers: {
         //http isteği olmaz ise kullanılır

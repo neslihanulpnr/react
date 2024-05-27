@@ -5,6 +5,6 @@ import userReducer from "../redux/userSlice";
 export const store = configureStore({
     reducer: {
         counter: counterReducer,
-        user : userReducer
+        user: userReducer
     },
 })

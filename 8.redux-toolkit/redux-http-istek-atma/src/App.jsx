@@ -1,13 +1,13 @@
 import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment } from './redux/counterSlice';
-import UserList from './userList';
+import UserList from './UserList';
 
 function App() {
 
   return (
     <div>
-       <UserList/>
+      <UserList />
     </div>
   )
 }
