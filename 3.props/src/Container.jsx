@@ -1,8 +1,7 @@
 function Container({ children }) {
     return (
       <div>
-           <div>Container</div>
-           {children}
+         {children}
       </div>
       
     )
