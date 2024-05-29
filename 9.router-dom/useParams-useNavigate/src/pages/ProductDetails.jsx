@@ -4,7 +4,7 @@ import { products } from '../data/products'
 import Product from '../components/Product'
 
 function ProductDetails() {
-    const { id } = useParams(); //idsini getir
+    const { id } = useParams(); //urldeki id parametresini al
     return (
         <div>
             <h1>Ürün Detayları</h1>
