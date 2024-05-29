@@ -10,7 +10,7 @@ function ProductDetails() {
             <h1>Ürün Detayları</h1>
             <hr />
             {
-                products && products.map((product) => {
+                products?.map((product) => {
                     if (product.id == id) {
                        return <Product product={product}/>
                     }
